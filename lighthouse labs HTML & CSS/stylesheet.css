@@ -1,0 +1,35 @@
+
+
+img {
+display: block;
+margin-bottom: 10px;
+}
+
+div {
+  border: green 2px solid;
+  float: right;
+}
+
+body {
+
+  float: left;
+  background-color: red;
+  font-family: 'Baloo Bhaijaan', Arial, sans-serif;
+  border: black 2px solid;
+}
+
+.foot {
+  padding: 20px 100px 15px 100px;
+  border: black 5px solid;
+  background-color: rgba(255,255,255,0.6);
+  color: green;
+  text-align: center;
+}
+
+#tel {
+  margin-bottom: 200px;
+}
+
+#hating {
+  color: red;
+}
