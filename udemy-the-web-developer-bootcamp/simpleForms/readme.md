@@ -10,4 +10,8 @@
 * I agree to terms and conditions checkbox
 * Submit button
 
-![simpleRegistrationForm](simpleRegirstationForm.png)
+First Attempt:
+![screenshot1](screenshot1.png)
+
+Second Attempt:
+![screenshot2](screenshot2.png)
