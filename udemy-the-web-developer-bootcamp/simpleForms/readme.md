@@ -1,6 +1,6 @@
-__Objective: __ Create a simple registration form to practice selects and inputs.
+**Objective:** Create a simple registration form to practice selects and inputs.
 
-__Requirements: __
+**Requirements:**
 
 * First Name and Last Name with placeholders
 * Gender with Radio Buttons 
