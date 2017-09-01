@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- OBJECTIVE: Using selects in forms.
+
+THINGS I LEARNED:
+* labels
+* label/fors and input/id will link the elements
+* input/name will link two inputs
+* radio vs. checkbox input types
+* button submits DOGS or CATS values
+* select for empty drop down and option tags
+** IF we leave option tag value = "" attribute tag blank, it will take in
+red/orange/yellow as the select/color assignment
+
+e.g. After submition using GO button file:///Users/Nicole/GitHub/Small-Project-Sandbox/udemy-the-web-developer-bootcamp/simpleForms/inputs.html?color=red -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs Demo</title>
+  </head>
+  <body>
+
+    <p>Do you prefer cats or dogs?</p>
+
+    <form>
+      <label for="dogs">Dogs: </label>
+      <input id="dogs" name="petChoice" type="radio" value="DOGS">
+
+
+      <label for="cats">Cats: </label>
+      <input id="cats" name="petChoice" type="radio" value="CATS">
+
+      <p>What is your favorite color?</p>
+      <select name="color">
+        <option>red</option>
+        <option>orange</option>
+        <option>yellow</option>
+
+      </select>
+
+      <p>What is your mood?</p>
+      <select name="color">
+        <option value="happy">:)</option>
+        <option value="neutral">:|</option>
+        <option value="sad">:()</option>
+
+      </select>
+
+      <textarea name="name" rows="10" cols="50"></textarea>
+
+      <button>GO</button>
+    </form>
+
+
+
+  </body>
+</html>
