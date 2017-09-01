@@ -10,8 +10,6 @@
 * I agree to terms and conditions checkbox
 * Submit button
 
-First Attempt:
-![screenshot1](screenshot1.png)
 
-Second Attempt:
-![screenshot2](screenshot2.png)
+![screenshot](screenshot.png)
+
