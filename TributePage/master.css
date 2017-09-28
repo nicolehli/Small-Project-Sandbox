@@ -1,0 +1,6 @@
+.container {
+  /*border: 6px solid green;*/
+  border-radius: 6px;
+  margin: 30px 30px 30px 30px;
+  background-color: #dddada;
+}
