@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Board</title>
+    <style type="text/css">
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        margin: auto;
+      }
+
+
+      td {
+        width: 100px;
+        height: 100px;
+      }
+
+      .middleRow {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .middleCol {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <!-- Create a table with 3 rows and 3 Columns/TDs with 100px by 100px with border -->
+    <table>
+      <tr>
+        <td></td>
+        <td class="middleCol"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="middleRow"></td>
+        <td class="middleCol middleRow"></td>
+        <td class="middleRow"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="middleCol"></td>
+        <td></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
