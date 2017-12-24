@@ -24,6 +24,7 @@ app.use(require('express-session')({
 app.use(passport.initialize())
 app.use(passport.session())
 // from passport-local-mongoose
+passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 
@@ -62,6 +63,20 @@ app.post('/register', function (req, res){
       res.redirect('/secret')
     })
   })
+})
+
+// LOGIN ROUTES
+// render login Form
+app.get('/login', function(req, res){
+  res.render('login')
+})
+// login logic
+// middleware compares input to database and redirect
+app.post('/login', passport.authenticate('local', {
+  successRedirect: '/secret',
+  failureRedirect: '/login'
+}), function(req, res){
+
 })
 
 // LISTEN ON PORT
