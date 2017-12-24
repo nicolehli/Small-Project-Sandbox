@@ -38,7 +38,7 @@ app.get('/', function (req, res) {
 })
 
 // SECRET ROUTE
-app.get('/secret', function (req, res) {
+app.get('/secret', isLoggedIn, function (req, res) {
   res.render('secret')
 })
 
@@ -76,8 +76,20 @@ app.post('/login', passport.authenticate('local', {
   successRedirect: '/secret',
   failureRedirect: '/login'
 }), function(req, res){
-
 })
+
+app.get('/logout', function(req, res){
+  req.logout()
+  res.redirect('/')
+})
+
+// middleware
+function isLoggedIn(req, res, next){
+  if(req.isAuthenticated()){
+    return next()
+  }
+  res.redirect("/login")
+}
 
 // LISTEN ON PORT
 var port = process.env.PORT | 3000
