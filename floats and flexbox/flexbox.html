@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <title>Some Web Page</title>
-    <link rel='stylesheet' href='stylesFlexbox.css'/>
-  </head>
-  <body>
-    <div class='menu-container'>
-      <div class='menu'>
-        <div class='date'>Aug 14, 2016</div>
-        <div class='signup'>Sign Up</div>
-        <div class='login'>Login</div>
+
+<head>
+  <meta charset='UTF-8' />
+  <title>Some Web Page</title>
+  <link rel='stylesheet' href='stylesFlexbox.css' />
+</head>
+
+<body>
+  <!-- Justify Content -->
+  <!-- <div class='menu-container'>
+    <div class='menu'>
+      <div class='date'>Aug 14, 2016</div>
+      <div class='signup'>Sign Up</div>
+      <div class='login'>Login</div>
+    </div>
+  </div> -->
+
+  <!-- Grouping -->
+  <div class='menu-container'>
+    <div class='menu'>
+      <div class='date'>Aug 14, 2016</div>
+      <div class='links'>
+        <div class='signup'>Sign Up</div> <!-- This is nested now -->
+        <div class='login'>Login</div> <!-- This one too! -->
       </div>
     </div>
-  </body>
+  </div>
+
+  <!-- Cross-axis (Vertical) Alignment -->
+  <div class='header-container'>
+    <div class='header'>
+      <div class='subscribe'>Subscribe &#9662;</div>
+      <div class='logo'><img src='images/awesome-logo.svg' /></div>
+      <div class='social'><img src='images/social-icons.svg' /></div>
+    </div>
+  </div>
+</body>
+
+<!-- Wrapping Set 1 with set 2 is no wrap-->
+<div class='photo-grid-container'>
+  <div class='photo-grid'>
+    <div class='photo-grid-item first-item'>
+      <img src='images/one.svg' />
+    </div>
+    <div class='photo-grid-item'>
+      <img src='images/two.svg' />
+    </div>
+    <div class='photo-grid-item'>
+      <img src='images/three.svg' />
+    </div>
+    <!-- Set 2 for wrapping -->
+    <div class='photo-grid-item'>
+      <img src='images/four.svg' />
+    </div>
+    <div class='photo-grid-item last-item'>
+      <img src='images/five.svg' />
+    </div>
+  </div>
+</div>
+
+
 </html>
