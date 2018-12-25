@@ -10,16 +10,29 @@
 }
 
 .sidebar {
+  float: none; /* Revert to default flow */
+  float: left;
+  float: right;
   height: 300px;
+  width: 200px;
   background-color: #F09A9D;    /* Red */
 }
 
 .content {
+  float: right;
   height: 500px;
+  width: 650px;
   background-color: #F5CF8E;    /* Yellow */
 }
 
 .footer {
+  clear: both;
   height: 200px;
   background-color: #D6E9FE;    /* Light blue */
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
